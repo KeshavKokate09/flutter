@@ -1,0 +1,165 @@
+
+In dart datatypes are defined by its value of variable. Varoables are used to store value and reserves the memory location. The data type specifies what type of value is stored in a variable, Dart is a static type of language, meaning the varriables cannot be modifiled.
+
+*number
+*string
+*Boolean
+*var
+*dynamic
+*const
+
+*NUMBER*
+	used to store numeric values
+	two types of number integer and double
+	1. Integer : 
+		represents non fractional value(numeric value without decimal point)
+		integer literals are represented using the int keyword
+
+	// code 1
+		void main(){
+			int x=10;
+			print(x);
+			
+			num y=20;
+			print(y);
+		}
+
+		output:
+			10
+			20
+
+	//code 2
+		void main(){
+			int x;
+			print(x);
+		}		
+
+		output:
+			ERROR : Non-Nullable variable can be asssigned when it is in use
+
+	//code 3
+		void main(){
+			int x=10;
+			printx(x);
+			
+			num y=20;
+			printx(y);
+
+			y=50;
+			print(y);
+		}
+		
+		output :
+			10 20 50
+
+	//code 4
+		void main(){
+			int x=10;
+			print(x);
+
+			num y=20;
+			print(y);
+
+			y=20.6;
+			print(y);
+
+			x=35.5; //Error
+			print(x);
+		}
+
+		output : 
+			ERROR : a value of type double cant be assigned to a variable 
+				of type int
+
+	2. Double :
+		fractional numeric value, values with decimal point
+		double represents a 64-bit floting point number
+		double keyword is used to represent floting point literal
+
+	//code 1
+		void main(){
+			double x=10.5;
+			print(x);
+
+			num y=20.5;
+			print(y);
+
+			y=20;
+			print(y);
+			
+			x=35;
+			print(x);
+		} 
+		output :
+			10.5
+			20.5
+			20
+			35.0
+
+	//code 2
+		void main(){
+			double x=10.5;
+			print(x.runtimeType);
+
+			num y=20;
+			print(y.runtimeType);
+			
+			num y=20;
+			print(y.runtimeType);
+		}
+
+		output :
+			double 
+			double
+			int 
+
+* String *
+	sequence of char
+	uses either single or double quote
+	sequence of UTF-16 code units
+	eg. String mes ="Hey devloper";
+
+	//code 1
+		void main(){
+			Sring name ='Keshav';
+			print(name);
+
+			String name1 ="Keshav";
+			print(name1);
+		}
+		output :
+			keshav
+			keshav
+
+* Boolean(bool) *
+	represents two values - true and false
+	bool keyword is used
+	the numeric values 1 and 0 are NOT used to represent true and false
+	eg. bool flag=true;
+
+	//code 1
+		void main(){
+			bool flag=true;
+			print(flag);
+		}
+		output :
+			true
+
+* var keyword *
+	it can hold any type of data
+	value can not change within the once initialized at declaration
+
+	// code 1
+		void main(){
+			var x="keshav";
+			print(x);
+
+			x=20.5;
+			print(x);
+		}
+		output :
+			keshav
+			
+
+
+
